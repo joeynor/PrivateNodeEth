@@ -49,7 +49,7 @@ az containerapp env create \
 #### Set up a storage account
 1. Define a storage account name.
 ```
-STORAGE_ACCOUNT_NAME="blockchainstorageaccount$RANDOM"
+STORAGE_ACCOUNT_NAME="bcstorageacc$RANDOM"
 ```
 2. Create an Azure Storage account.
 ```
@@ -64,7 +64,7 @@ az storage account create \
 ```
 3. Define a file share name and create it
 ```
-STORAGE_SHARE_NAME="Ethereum"
+STORAGE_SHARE_NAME="ethereum"
 
 az storage share-rm create \
   --resource-group $RESOURCE_GROUP \
